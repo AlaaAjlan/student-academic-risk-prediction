@@ -43,7 +43,7 @@ The simulator generates 10,000 students with four groups of features:
 | Logistic Regression | 0.46 | **0.86** | 77.6% |
 | Decision Tree | 0.47 | 0.83 | 74.1% |
 | Random Forest | 0.50 | 0.85 | **79.9%** |
-| XGBoost | 0.51 | 0.85 | 74.4% |
+| XGBoost | 0.51 | 0.84 | 74.4% |
 
 <p align="center">
   <img src="images/academic_vs_all_features.png" width="49%" alt="Academic only vs all features">
@@ -52,7 +52,7 @@ The simulator generates 10,000 students with four groups of features:
 
 **Findings:**
 
-- **Features:** Academic features alone performed at chance level (ROC-AUC about 0.5). Adding behavioral and emotional features raised ROC-AUC to about 0.85. This is expected here, because the simulator builds the risk label from engagement and wellbeing signals. In real data, this experiment would test whether those signals actually carry that information.
+- **Features:** Academic features alone performed at chance level (ROC-AUC about 0.5). Adding behavioral and emotional features raised ROC-AUC to 0.83–0.86. This is expected here, because the simulator builds the risk label from engagement and wellbeing signals. In real data, this experiment would test whether those signals actually carry that information.
 - **Model choice:** Logistic Regression had the most consistent ROC-AUC. Random Forest and XGBoost improved steadily as the dataset grew.
 
 ## Running it
