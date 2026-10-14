@@ -55,15 +55,6 @@ The simulator generates 10,000 students with four groups of features:
 - **Features:** Academic features alone performed at chance level (ROC-AUC about 0.5). Adding behavioral and emotional features raised ROC-AUC to 0.83–0.86. This is expected here, because the simulator builds the risk label from engagement and wellbeing signals. In real data, this experiment would test whether those signals actually carry that information.
 - **Model choice:** Logistic Regression had the most consistent ROC-AUC. Random Forest and XGBoost improved steadily as the dataset grew.
 
-## Running it
-
-```bash
-pip install -r requirements.txt
-jupyter notebook student_risk_prediction.ipynb
-```
-
-The notebook generates its own data, so nothing needs to be downloaded.
-
 ## Next steps
 
 - Validate the pipeline on a real, anonymized student dataset.
